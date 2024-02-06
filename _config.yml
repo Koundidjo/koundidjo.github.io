@@ -8,7 +8,7 @@ theme: jekyll-theme-minimal
 
 # Configuration des couleurs
 colors:
-  background: "#f8f8f8"  # Couleur de fond
+  background: "#fa0a0a"  # Couleur de fond
   text: "#333333"        # Couleur du texte
   link: "#007bff"        # Couleur des liens
 
