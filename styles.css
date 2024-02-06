@@ -7,12 +7,12 @@ body, h1, h2, p {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f8f8f8; /* Une couleur de fond plus claire */
+    background-color: #f4f4f4; /* Une couleur de fond légèrement grise */
     color: #333;
 }
 
 header {
-    background-color: #333; /* Une couleur de fond plus sombre pour l'en-tête */
+    background-color: #2e2e2e; /* Une couleur de fond plus sombre pour l'en-tête (noir-gris) */
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -31,7 +31,7 @@ section {
 }
 
 h2 {
-    color: #333; /* Une couleur de titre plus foncée */
+    color: #4b4b4b; /* Une couleur de titre plus foncée (marron foncé) */
 }
 
 p {
@@ -41,7 +41,7 @@ p {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333; /* Une couleur de fond plus sombre pour le pied de page */
+    background-color: #2e2e2e; /* Une couleur de fond plus sombre pour le pied de page (noir-gris) */
     color: #fff;
     position: fixed;
     bottom: 0;
