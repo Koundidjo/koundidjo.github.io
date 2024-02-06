@@ -1,0 +1,52 @@
+/* Réinitialisation des styles par défaut du navigateur */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ajoutez des styles supplémentaires selon vos besoins */
+
