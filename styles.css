@@ -49,3 +49,9 @@ footer {
 }
 
 /* Ajoutez des styles supplémentaires selon vos besoins */
+.image-projet {
+    max-width: 100%; /* Ajustez la largeur maximale selon vos besoins */
+    height: auto; /* Assure que l'image conserve ses proportions originales */
+}
+
+/* Ajoutez des styles supplémentaires selon vos besoins */
