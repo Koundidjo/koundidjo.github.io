@@ -1,52 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Projet Objets Connectés</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Documentation  Objets Connectés</title>
     <!-- Ajoutez d'autres balises meta ou liens vers des fichiers CSS si nécessaire -->
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Mon Projet d'Objets Connectés</h1>
+      <h1>Option Objets Connectés</h1>
     </header>
 
     <section>
-        <h2>Parcours dans l'Option Objets Connectés</h2>
-        <img src="unnamed.jpg" alt="Image du Bird"  class="image-projet">
+      <h2>Introduction</h2>
 
-        <p>Jusqu'à présent, mon parcours dans l'option Objets connectés a été une véritable aventure d'apprentissage, débutant par l'exploration de la programmation Arduino. Nous avons plongé dans les fondements du fonctionnement d'une carte Arduino, amorçant notre exploration en allumant une simple LED. Rapidement, nous avons étendu nos connaissances en comprenant le fonctionnement d'un capteur I2C, d'un servo-moteur et d'un écran LCD.</p>
-
-        <p>Les projets communs ont ajouté une dimension passionnante à notre parcours. L'un d'eux consistait à modéliser la base d'un oiseau, un élément clé dans notre initiative visant à mesurer la qualité de l'air. Dans ce projet novateur, le servo-moteur, lié à l'oiseau modélisé, prend une position spécifique en fonction de la qualité de l'air. Cette position indique aux personnes présentes dans la pièce la qualité de l'air, et en ajustant l'angle du servo-moteur, elles peuvent réagir en ouvrant une fenêtre.</p>
-
-        <p>Pour la modélisation de la base de l'oiseau, nous avons utilisé Fusion 360, explorant les rudiments de la création, de l'extrusion, des congés, des chanfreins et des projections. Ce processus a élargi notre compréhension des applications pratiques de la modélisation 3D dans le domaine des objets connectés.</p>
-
-        <p>Cependant, la partie la plus complexe de ce périple a été la mise en place d'un serveur web pour afficher les valeurs de qualité de l'air. Si afficher ces valeurs sur un écran LCD ou ajuster la position du servo-moteur en fonction de la qualité de l'air semblait relativement accessible, la transition vers l'affichage en ligne s'est avérée être un défi stimulant. Actuellement, je suis immergé dans cette phase cruciale du projet, travaillant à rendre ces données disponibles via un serveur web.</p>
-
-        <p>Il est important de noter que la qualité de l'air que nous mesurons est la concentration en particules fines PM 2.5, celles de moins de 2.5 micromètres. Ce projet revêt une importance particulière, car son objectif ultime est de le déployer dans des laboratoires de céramique, où la présence de particules de terre peut être nocive pour les poumons. Nous utilisons un microcontrôleur ESP32 pour atteindre nos objectifs.</p>
-
-        <p>Ce voyage a été une fusion passionnante de la programmation, de la modélisation 3D et de la résolution de problèmes pratiques. À mesure que je me penche sur la complexité de l'intégration des données sur le serveur web, je reste inspiré par le potentiel transformateur de notre projet dans le domaine de la sécurité et de la santé respiratoire.</p>
+      <p>
+        Au début de ce cours nous avons vu les bases d'Arduino qui vont nous
+        être utiles par la suite dans la réalisation des projets. <br />
+        Le fonctionnement d'un servo moteur , d'une LED , d'un écran , de la
+        carte Arduino elle même ainsi que le micro Controlleur ESP32. <br />
+        On a par la même occasion était initié à la modélision 3D sur Fusion voici un petit exemple de ce qu'on a fait : 
+        <div style="display: flex;">
+            <img src="Capture d'écran 2024-03-28 121548.png" alt="" class="image-projet" style="margin-right: 5px">
+        <img src="unnamed.jpg" alt="" class="image-projet" />
+        </div>
+      </p>
     </section>
+    <section>
+        <h2>Projet Bird</h2>
+
+  
+        <p>
+            Ensuite nous nous sommes inspirés d'un projet qui se nomme Bird qui est un oiseau qui en fonction de sa position donne une indication sur la qualité de l'air. <br>
+            Pour notre projet , nous prennons en compte la concentration en particules inférieur à 2.5um.L'objectif serait de placer 4 Bird dans les différents ateliers du FacLab (menuiserie , céramic etc..) <br>
+            Ce que nous avons fait en introduction nous a permis de réaliser toutes les tâches nécessaires à l'aboutissement de ce projet <br>
+            On a donc utlisé un micro controlleur ESP32 un servo moteur un capteur de qualité de l'air et un écran LED ou LCD <br>
+            l'idée était dans un premier temps de réussir à capter la qualité de l'air et d'ensuite fixer des palier à partir des quelles savoir si la qualité de l'air était bonne moyenne ou mauvaise. <br>
+             Pour cela nous avons effectuer des recherches sur internet et nous sommes arrivés à cette conclusion : quand la concentrationen Pm 2.5 est inférieurà 12 la qualité de l'air est bonne , entre 12 et 35 elle est modérée au dessus 35 elle est nocive et il faut ouvrir les fenêtres rapidement. <br>
+            Une fois sa mis en place , on a pu attaquer la partie Web , on a mis en place une base de données en MySQL et Prisma, j'ai crée des formulaires Html Css pour ajouter un device c'est à dire un bir (capteur de qualité de l'air) , et un formulaire pour afiicher les valeurs en Pm 2.5 que l'on a récuperé dans un intervalle de temps que l'on choisie. <br>
+            J'ai découver Charte Js qui est une bibliothèque JavaScript pour la visualistaion de données que j'ai ajouté à mon formulaire. <br>
+            Voici à quoi ressemble le projet final : <video width="100%" controls>
+                <source src="Enregistrement 2024-03-26 121759.mp4" type="video/mp4" class="image-projet"/>
+                Your browser does not support the video tag.
+              </video> 
+            Avec les bases acquéri en modélisation 3D lors de l'introduction j'ai réalisé la base du Bird : <img src="Capture d'écran 2024-03-28 121341.png" alt="" class="image-projet">
+        </p>
+      </section>
 
     <section>
-        <h2>Projet Baby-Foot Connecté</h2>
-        <div style="display: flex;">
-        <img src="IMG_0196.jpg" alt="Image du projet baby-foot" class="image-projet" style="margin-right: 5px;">
-        <img src="IMG_0197.jpg" alt="Image du projet baby-foot" class="image-projet">
-        </div>
-        
-        <p>Ce matin, on s'est attaqués au prototype de baby-foot connecté pour notre projet IoT. On a pris les mesures du modèle Bonzini sur un carton, reproduisant le terrain de jeu avec précision. Ensuite, on a travaillé sur le support de l'écran tactile Raspberry Pi 3 modèle B+, en imaginant comment positionner les LEDs tout autour du terrain pour créer une ambiance lumineuse unique. On a également réfléchi à l'emplacement idéal pour les deux capteurs laser, stratégiquement placés là où la balle roule après qu'on a concédé un but. Ça promet d'ajouter une touche vraiment futuriste et immersive à notre baby-foot. En résumé, entre les mesures, la maquette, le support d'écran, et la disposition des LEDs, on progresse bien dans la réalisation de notre baby-foot connecté. Ça s'annonce génial !</p>
-    </section>
+      <h2>Projet Baby-Foot Connecté</h2>
+      
 
+      <p>
+        Ce matin, on s'est attaqués au prototype de baby-foot connecté pour
+        notre projet IoT. On a pris les mesures du modèle Bonzini sur un carton,
+        reproduisant le terrain de jeu avec précision. Ensuite, on a travaillé
+        sur le support de l'écran tactile Raspberry Pi 3 modèle B+, en imaginant
+        comment positionner les LEDs tout autour du terrain pour créer une
+        ambiance lumineuse unique. On a également réfléchi à l'emplacement idéal
+        pour les deux capteurs laser, stratégiquement placés là où la balle
+        roule après qu'on a concédé un but. En résumé, entre les
+        mesures, la maquette, le support d'écran, et la disposition des LEDs, on
+        progresse bien dans la réalisation de notre baby-foot connecté. <br>
+        <div style="display: flex">
+            <img
+              src="IMG_0196.jpg"
+              alt="Image du projet baby-foot"
+              class="image-projet"
+              style="margin-right: 5px"
+            />
+            <img
+              src="IMG_0197.jpg"
+              alt="Image du projet baby-foot"
+              class="image-projet"
+            />
+          </div>
+        2 semaines d'alternance écoulées on a enfin reçu notre baby foot ce qui va nous faciliter grandement la réalisation du projet <img src="" alt="">
+        on s'est aperçus que l'on pouvait directement modifier le baby foot , j'ai alors modélisé la pièce dans laquelle le balon atteri après qu'il y'ait un but.
+        <div style="display: flex;">
+            <img src="IMG_0239.jpg" alt="" class="image-projet" style="margin-right: 5px">
+            <img src="IMG_0240.jpg" alt="" class="image-projet">
+        </div>
+        Voici à quoi ressemble la pièce modélisée sur fusion et après impression : 
+        <div style="display: flex;">
+            <img src="Capture d'écran 2024-03-28 141911.png" alt="" class="image-projet" style="margin-right: 5px">
+            <img src="IMG_0255.jpg" alt="" class="image-projet">
+        </div>
+        J'ai aussi eu à faire des formulaires comme pour le projet du Bird, un formulaire de création de joueur qui peut ensuite nous mener vers un formulaire de création de partie et on se base uniquement sur les joueurs présent en base de données et une fois la partie crée le formualire de la partie en cours avec le score des deux équipes. <br>
+        Je vous laisse voir par vous même : <video width="100%" controls>
+            <source src="Enregistrement 2024-03-28 142517.mp4" type="video/mp4" class="image-projet"/>
+            Your browser does not support the video tag.
+          </video> 
+          j'ai aussi ajouté un bouton fin de partie à mon formulaire de partie , cela va permetre de faire passer l'état de la partie de En Cours à Finie pour que ensuite quand il y'a un but dans ma route Post je cherche la partie qui est En Cours puis si c'est l'équipe bleu qui a marquée j'incremente de +1 le score de l'équipe Bleu et de même avec les rouges je ne sais pas si on aura le temps de mettre sa en place mais c'est de cette manière que je compte procéder.
+      </p>
+      <p>On réussi à envoyer la requête du but depuis l'arduino , l'idée est que au moment dde la requête on vérifie dans la table game la partie qui a un état En cours qui correspond à la partie en cours ^^.Ensuite si c'est l'équipe bleu qui a marqué c'est +1 à l'adversaire 2 et si c'est les rouges c'est +1 à l'adversaire 1 et sa jusqu'à que l'on décide de mettre un terme à la partie en cliquant sur le bouton que j'ai ajouté dans le formulaire pour mettre un terme à la partie il va faire passer l'état de la partie de En cours à Finie.</p>
+      <p>On va maintenant essayer de tout monter sur le babyfoot et de le tester. Voila à quoi ressemble les nouveaux buts : </p>
+      <img src="IMG_0254.jpg" alt="" width="100%">
+    </section>
 
     <!-- Ajoutez d'autres sections ou divs selon votre besoin -->
 
     <footer>
-        <p>&copy; 2024 Mon Projet Objets Connectés. Tous droits réservés.</p>
+      <p>&copy; 2024 Mon Projet Objets Connectés. Tous droits réservés.</p>
     </footer>
-</body>
-
+  </body>
 </html>
